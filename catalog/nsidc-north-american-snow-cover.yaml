@@ -1,0 +1,32 @@
+id: nsidc-north-american-snow-cover
+title: North American Snow Cover Extent (G02135)
+description: >
+  Weekly snow cover extent for North America from the Rutgers Global Snow Lab
+  product archived at NSIDC. Complements sea-ice products for cryosphere and
+  hydrology monitoring.
+publisher: NSIDC (Rutgers Global Snow Lab product)
+topics: [snow, cryosphere, north-america, extent]
+source:
+  canonical_url: https://nsidc.org/data/g02135
+  former_climate_gov_url: null
+  doi: "10.7265/N5H1308K"
+access:
+  method: [web, bulk, ftp]
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format: [ascii, geotiff]
+coverage:
+  spatial: North America
+  temporal: "1966-present"
+  cadence: weekly
+license: public-domain (US Gov work)
+attribution: "Rutgers Global Snow Lab / NSIDC G02135"
+archive:
+  wayback_url: null
+  noaa_s3: null
+  mirror: null
+status: live
+last_checked: "2026-06-29"
+checksum: null
+notes: null
