@@ -1,5 +1,7 @@
 # Climate Almanac
 
+[![CI](https://github.com/almanac-data/climate-almanac/actions/workflows/ci.yml/badge.svg)](https://github.com/almanac-data/climate-almanac/actions/workflows/ci.yml)
+
 [![Good first issues](https://img.shields.io/github/issues/almanac-data/climate-almanac/good%20first%20issue?label=good%20first%20issues&color=7057ff)](https://github.com/almanac-data/climate-almanac/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
 
 **An open, versioned index of public climate data — so the record survives when the websites don't.**
