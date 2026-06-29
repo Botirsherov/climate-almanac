@@ -1,0 +1,32 @@
+id: us-drought-monitor
+title: U.S. Drought Monitor
+description: >
+  Weekly map and tabular summary of drought conditions across the United States,
+  blending physical indicators and expert synthesis. The operational drought
+  status record cited in media, agriculture, and policy.
+publisher: "University of Nebraska–Lincoln (NOAA/NIDIS/USDA partners)"
+topics: [drought, united-states, hazards, weekly]
+source:
+  canonical_url: https://droughtmonitor.unl.edu/
+  former_climate_gov_url: https://www.climate.gov/maps-data/dataset/current-drought-conditions-united-states
+  doi: null
+access:
+  method: [web, bulk, api]
+  auth_required: false
+  auth_note: null
+  rate_limit: null
+format: [gif, shapefile, kmz, txt]
+coverage:
+  spatial: United States and Puerto Rico
+  temporal: "2000-present"
+  cadence: weekly
+license: public-domain (US Gov partner product; see site terms)
+attribution: "U.S. Drought Monitor — USDA, NOAA, and University of Nebraska–Lincoln"
+archive:
+  wayback_url: null
+  noaa_s3: null
+  mirror: null
+status: live
+last_checked: "2026-06-29"
+checksum: null
+notes: null

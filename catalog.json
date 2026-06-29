@@ -1,12 +1,432 @@
 {
   "name": "Climate Almanac",
   "description": "An open, versioned index of public climate data.",
-  "count": 3,
+  "count": 17,
   "by_status": {
     "frozen": 1,
-    "live": 2
+    "live": 16
   },
   "entries": [
+    {
+      "id": "berkeley-earth-temperature",
+      "title": "Berkeley Earth Surface Temperature",
+      "description": "Independent global land and ocean surface temperature analysis with gridded fields and uncertainty estimates. Often used as a cross-check against government temperature indices.\n",
+      "publisher": "Berkeley Earth",
+      "topics": [
+        "temperature",
+        "anomalies",
+        "global",
+        "independent-analysis"
+      ],
+      "source": {
+        "canonical_url": "https://berkeleyearth.org/data/",
+        "former_climate_gov_url": null,
+        "doi": null
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "netcdf",
+        "csv",
+        "txt"
+      ],
+      "coverage": {
+        "spatial": "global",
+        "temporal": "1850-present",
+        "cadence": "monthly"
+      },
+      "license": "CC-BY-NC-SA-4.0 (see Berkeley Earth terms for commercial use)",
+      "attribution": "Berkeley Earth Surface Temperature Data",
+      "archive": {
+        "wayback_url": null,
+        "noaa_s3": null,
+        "mirror": null
+      },
+      "status": "live",
+      "last_checked": "2026-06-29",
+      "checksum": null,
+      "notes": null
+    },
+    {
+      "id": "copernicus-era5-reanalysis",
+      "title": "ERA5 Reanalysis (single levels)",
+      "description": "Fifth-generation ECMWF global atmospheric reanalysis at ~31 km resolution, hourly from 1940 to near-present. The standard open reanalysis for weather and climate research when a consistent gridded product is needed.\n",
+      "publisher": "Copernicus Climate Change Service (C3S) / ECMWF",
+      "topics": [
+        "reanalysis",
+        "atmosphere",
+        "temperature",
+        "precipitation",
+        "wind"
+      ],
+      "source": {
+        "canonical_url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "former_climate_gov_url": null,
+        "doi": "10.24381/cds.adbb2d47"
+      },
+      "access": {
+        "method": [
+          "web",
+          "api",
+          "bulk"
+        ],
+        "auth_required": true,
+        "auth_note": "Free Copernicus Climate Data Store account required",
+        "rate_limit": "CDS queue-based retrieval; see CDS fair-use policy"
+      },
+      "format": [
+        "netcdf",
+        "grib"
+      ],
+      "coverage": {
+        "spatial": "global",
+        "temporal": "1940-present",
+        "cadence": "irregular"
+      },
+      "license": "Copernicus Licence (free for research and commercial use with attribution)",
+      "attribution": "Copernicus Climate Change Service (C3S) (2025): ERA5 reanalysis. ECMWF.",
+      "archive": {
+        "wayback_url": null,
+        "noaa_s3": null,
+        "mirror": null
+      },
+      "status": "live",
+      "last_checked": "2026-06-29",
+      "checksum": null,
+      "notes": "Native hourly fields; catalogue also offers monthly aggregates.\n"
+    },
+    {
+      "id": "cpc-long-range-outlooks",
+      "title": "CPC Long-Lead Climate Outlooks",
+      "description": "NOAA Climate Prediction Center seasonal and long-lead outlooks for temperature, precipitation, and drought across the United States. Operational guidance products for planners and researchers tracking climate variability.\n",
+      "publisher": "NOAA Climate Prediction Center (CPC)",
+      "topics": [
+        "forecasts",
+        "seasonal",
+        "precipitation",
+        "temperature",
+        "drought"
+      ],
+      "source": {
+        "canonical_url": "https://www.cpc.ncep.noaa.gov/products/predictions/long_range/",
+        "former_climate_gov_url": null,
+        "doi": null
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "gif",
+        "png",
+        "txt"
+      ],
+      "coverage": {
+        "spatial": "United States (CONUS-focused products)",
+        "temporal": "operational; archives vary by product",
+        "cadence": "monthly"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "NOAA/NWS Climate Prediction Center",
+      "archive": {
+        "wayback_url": null,
+        "noaa_s3": null,
+        "mirror": null
+      },
+      "status": "live",
+      "last_checked": "2026-06-29",
+      "checksum": null,
+      "notes": "Parent /products/predictions/ path returned HTTP 403 to automated probes but this long-range subdirectory responded 200 on 2026-06-29.\n"
+    },
+    {
+      "id": "metoffice-hadcrut5",
+      "title": "HadCRUT5 Global Temperature Dataset",
+      "description": "Met Office Hadley Centre / UEA CRU gridded near-surface temperature anomalies on a 5° grid. One of the long-running global temperature records used in IPCC assessments alongside NASA and NOAA products.\n",
+      "publisher": "UK Met Office Hadley Centre / Climatic Research Unit",
+      "topics": [
+        "temperature",
+        "anomalies",
+        "global",
+        "gridded"
+      ],
+      "source": {
+        "canonical_url": "https://www.metoffice.gov.uk/hadobs/hadcrut5/",
+        "former_climate_gov_url": null,
+        "doi": "10.1029/2020JD032299"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "netcdf",
+        "csv"
+      ],
+      "coverage": {
+        "spatial": "global",
+        "temporal": "1850-present",
+        "cadence": "monthly"
+      },
+      "license": "Open Government Licence v3.0 (UK Met Office data)",
+      "attribution": "HadCRUT5 — Met Office Hadley Centre / University of East Anglia",
+      "archive": {
+        "wayback_url": null,
+        "noaa_s3": null,
+        "mirror": null
+      },
+      "status": "live",
+      "last_checked": "2026-06-29",
+      "checksum": null,
+      "notes": null
+    },
+    {
+      "id": "nasa-gistemp",
+      "title": "GISS Surface Temperature Analysis (GISTEMP v4)",
+      "description": "NASA's global land–ocean surface temperature anomaly product, widely cited in annual global temperature reporting. Gridded anomalies and station-based analysis with open data files and documented methods.\n",
+      "publisher": "NASA Goddard Institute for Space Studies (GISS)",
+      "topics": [
+        "temperature",
+        "anomalies",
+        "global",
+        "trends"
+      ],
+      "source": {
+        "canonical_url": "https://data.giss.nasa.gov/gistemp/",
+        "former_climate_gov_url": "https://www.climate.gov/news-features/understanding-climate/climate-change-global-temperature",
+        "doi": null
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "txt",
+        "csv",
+        "netcdf"
+      ],
+      "coverage": {
+        "spatial": "global",
+        "temporal": "1880-present",
+        "cadence": "monthly"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "NASA GISS Surface Temperature Analysis (GISTEMP Team, 2025)",
+      "archive": {
+        "wayback_url": null,
+        "noaa_s3": null,
+        "mirror": null
+      },
+      "status": "live",
+      "last_checked": "2026-06-29",
+      "checksum": null,
+      "notes": null
+    },
+    {
+      "id": "nasa-grace-land-mascons",
+      "title": "GRACE/GRACE-FO Land Mass Concentration (Mascon) Time Series",
+      "description": "NASA/JPL gridded time series of terrestrial water storage changes from the GRACE and GRACE-FO gravity missions. Used for drought, groundwater, and ice mass balance studies at regional to global scales.\n",
+      "publisher": "NASA JPL Physical Oceanography Distributed Active Archive Center (PO.DAAC)",
+      "topics": [
+        "gravity",
+        "water-storage",
+        "drought",
+        "cryosphere",
+        "groundwater"
+      ],
+      "source": {
+        "canonical_url": "https://podaac.jpl.nasa.gov/dataset/GRACE_LAND_MASCON_CRI_TIME_SERIES_RL0603_Mascons",
+        "former_climate_gov_url": null,
+        "doi": "10.5067/TEMSC-3MJCN"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": true,
+        "auth_note": "Free NASA Earthdata Login required for PO.DAAC downloads",
+        "rate_limit": null
+      },
+      "format": [
+        "netcdf"
+      ],
+      "coverage": {
+        "spatial": "global land",
+        "temporal": "2002-present (mission gaps documented)",
+        "cadence": "monthly"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "NASA JPL GRACE/GRACE-FO Mascon solutions via PO.DAAC",
+      "archive": {
+        "wayback_url": null,
+        "noaa_s3": null,
+        "mirror": null
+      },
+      "status": "live",
+      "last_checked": "2026-06-29",
+      "checksum": null,
+      "notes": "Legacy grace.jpl.nasa.gov product pages returned 404 on 2026-06-29; PO.DAAC is the current canonical distribution path for this mascon release.\n"
+    },
+    {
+      "id": "ncei-climate-data-online",
+      "title": "NOAA Climate Data Online (CDO)",
+      "description": "Searchable archive and API for NOAA/NCEI station, radar, and derived climate datasets. The general-purpose access path for many NCEI holdings beyond single-product landing pages.\n",
+      "publisher": "NOAA NCEI",
+      "topics": [
+        "stations",
+        "api",
+        "archive",
+        "metadata"
+      ],
+      "source": {
+        "canonical_url": "https://www.ncei.noaa.gov/cdo-web/",
+        "former_climate_gov_url": null,
+        "doi": null
+      },
+      "access": {
+        "method": [
+          "web",
+          "api",
+          "bulk"
+        ],
+        "auth_required": true,
+        "auth_note": "Free NCEI token required for API access",
+        "rate_limit": "5 requests per second; 10,000 requests per day (documented CDO limits)"
+      },
+      "format": [
+        "json",
+        "csv"
+      ],
+      "coverage": {
+        "spatial": "global (dataset-dependent)",
+        "temporal": "dataset-dependent",
+        "cadence": "irregular"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "NOAA National Centers for Environmental Information, Climate Data Online",
+      "archive": {
+        "wayback_url": null,
+        "noaa_s3": null,
+        "mirror": null
+      },
+      "status": "live",
+      "last_checked": "2026-06-29",
+      "checksum": null,
+      "notes": null
+    },
+    {
+      "id": "ncei-global-ocean-heat-content",
+      "title": "Global Ocean Heat Content (NCEI)",
+      "description": "Observed ocean heat content anomalies for the upper ocean layers, a key indicator of Earth's energy imbalance and climate change. Maintained by NCEI as part of global ocean monitoring products.\n",
+      "publisher": "NOAA NCEI",
+      "topics": [
+        "ocean",
+        "heat-content",
+        "temperature",
+        "anomalies"
+      ],
+      "source": {
+        "canonical_url": "https://www.ncei.noaa.gov/access/global-ocean-heat-content/",
+        "former_climate_gov_url": null,
+        "doi": null
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "txt",
+        "netcdf"
+      ],
+      "coverage": {
+        "spatial": "global ocean",
+        "temporal": "1955-present",
+        "cadence": "seasonal"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "NOAA National Centers for Environmental Information, Global Ocean Heat Content",
+      "archive": {
+        "wayback_url": null,
+        "noaa_s3": null,
+        "mirror": null
+      },
+      "status": "live",
+      "last_checked": "2026-06-29",
+      "checksum": null,
+      "notes": null
+    },
+    {
+      "id": "ncei-storm-events-database",
+      "title": "NOAA Storm Events Database",
+      "description": "Official record of severe storms and significant weather phenomena across the United States, with fatalities, injuries, and property damage. Widely used for hazard climatology and disaster research.\n",
+      "publisher": "NOAA NCEI",
+      "topics": [
+        "storms",
+        "severe-weather",
+        "hazards",
+        "united-states"
+      ],
+      "source": {
+        "canonical_url": "https://www.ncei.noaa.gov/stormevents/",
+        "former_climate_gov_url": null,
+        "doi": null
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "csv"
+      ],
+      "coverage": {
+        "spatial": "United States",
+        "temporal": "1950-present",
+        "cadence": "event"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "NOAA National Centers for Environmental Information, Storm Events Database",
+      "archive": {
+        "wayback_url": null,
+        "noaa_s3": null,
+        "mirror": null
+      },
+      "status": "live",
+      "last_checked": "2026-06-29",
+      "checksum": null,
+      "notes": null
+    },
     {
       "id": "noaa-billion-dollar-disasters",
       "title": "Billion-Dollar Weather and Climate Disasters",
@@ -100,6 +520,147 @@
       "notes": "Core dataset — high priority to keep mapped. Time series are small (CSV per region) and would be cheap to mirror if it ever darkens.\n"
     },
     {
+      "id": "noaa-ghcn-daily",
+      "title": "Global Historical Climatology Network — Daily (GHCN-Daily)",
+      "description": "Daily station observations of temperature, precipitation, and snow for tens of thousands of land stations worldwide. The backbone of many global and regional climate analyses and a primary input to gridded products.\n",
+      "publisher": "NOAA NCEI",
+      "topics": [
+        "temperature",
+        "precipitation",
+        "snow",
+        "stations",
+        "land"
+      ],
+      "source": {
+        "canonical_url": "https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily",
+        "former_climate_gov_url": null,
+        "doi": "10.7289/V5D21VHZ"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk",
+          "ftp"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "csv",
+        "txt"
+      ],
+      "coverage": {
+        "spatial": "global (land stations)",
+        "temporal": "1763-present (station-dependent)",
+        "cadence": "daily"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "NOAA National Centers for Environmental Information, GHCN-Daily",
+      "archive": {
+        "wayback_url": null,
+        "noaa_s3": null,
+        "mirror": null
+      },
+      "status": "live",
+      "last_checked": "2026-06-29",
+      "checksum": null,
+      "notes": "Bulk files are served under /data/global-historical-climatology-network-daily/. Station metadata and documentation ship with the download bundles.\n"
+    },
+    {
+      "id": "noaa-gml-co2-trends",
+      "title": "Global Monitoring Laboratory — CO₂ Trends",
+      "description": "Atmospheric carbon dioxide measurements from the Mauna Loa and global in situ network, including the iconic Keeling Curve. The reference time series for anthropogenic CO₂ increase in public communication and research.\n",
+      "publisher": "NOAA Global Monitoring Laboratory (GML)",
+      "topics": [
+        "carbon-dioxide",
+        "greenhouse-gases",
+        "atmosphere",
+        "trends"
+      ],
+      "source": {
+        "canonical_url": "https://gml.noaa.gov/ccgg/trends/",
+        "former_climate_gov_url": "https://www.climate.gov/news-features/understanding-climate/climate-change-atmospheric-carbon-dioxide",
+        "doi": null
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "txt",
+        "csv"
+      ],
+      "coverage": {
+        "spatial": "global (in situ sites; Mauna Loa flagship)",
+        "temporal": "1958-present (Mauna Loa); varies by site",
+        "cadence": "monthly"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "NOAA Global Monitoring Laboratory, Carbon Cycle Greenhouse Gases",
+      "archive": {
+        "wayback_url": null,
+        "noaa_s3": null,
+        "mirror": null
+      },
+      "status": "live",
+      "last_checked": "2026-06-29",
+      "checksum": null,
+      "notes": null
+    },
+    {
+      "id": "nsidc-north-american-snow-cover",
+      "title": "North American Snow Cover Extent (G02135)",
+      "description": "Weekly snow cover extent for North America from the Rutgers Global Snow Lab product archived at NSIDC. Complements sea-ice products for cryosphere and hydrology monitoring.\n",
+      "publisher": "NSIDC (Rutgers Global Snow Lab product)",
+      "topics": [
+        "snow",
+        "cryosphere",
+        "north-america",
+        "extent"
+      ],
+      "source": {
+        "canonical_url": "https://nsidc.org/data/g02135",
+        "former_climate_gov_url": null,
+        "doi": "10.7265/N5H1308K"
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk",
+          "ftp"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "ascii",
+        "geotiff"
+      ],
+      "coverage": {
+        "spatial": "North America",
+        "temporal": "1966-present",
+        "cadence": "weekly"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "Rutgers Global Snow Lab / NSIDC G02135",
+      "archive": {
+        "wayback_url": null,
+        "noaa_s3": null,
+        "mirror": null
+      },
+      "status": "live",
+      "last_checked": "2026-06-29",
+      "checksum": null,
+      "notes": null
+    },
+    {
       "id": "nsidc-sea-ice-index",
       "title": "Sea Ice Index",
       "description": "Daily and monthly Arctic and Antarctic sea ice extent and concentration, with anomaly fields and trend imagery. The standard reference for sea-ice decline; widely cited and surfaced by climate.gov.\n",
@@ -149,6 +710,104 @@
       "last_checked": "2026-06-28",
       "checksum": null,
       "notes": "Hosted at NSIDC (a university-based DAAC), so somewhat insulated from federal site shutdowns — but funded partly through NOAA/NASA, so not immune. Worth watching.\n"
+    },
+    {
+      "id": "us-drought-monitor",
+      "title": "U.S. Drought Monitor",
+      "description": "Weekly map and tabular summary of drought conditions across the United States, blending physical indicators and expert synthesis. The operational drought status record cited in media, agriculture, and policy.\n",
+      "publisher": "University of Nebraska–Lincoln (NOAA/NIDIS/USDA partners)",
+      "topics": [
+        "drought",
+        "united-states",
+        "hazards",
+        "weekly"
+      ],
+      "source": {
+        "canonical_url": "https://droughtmonitor.unl.edu/",
+        "former_climate_gov_url": "https://www.climate.gov/maps-data/dataset/current-drought-conditions-united-states",
+        "doi": null
+      },
+      "access": {
+        "method": [
+          "web",
+          "bulk",
+          "api"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": null
+      },
+      "format": [
+        "gif",
+        "shapefile",
+        "kmz",
+        "txt"
+      ],
+      "coverage": {
+        "spatial": "United States and Puerto Rico",
+        "temporal": "2000-present",
+        "cadence": "weekly"
+      },
+      "license": "public-domain (US Gov partner product; see site terms)",
+      "attribution": "U.S. Drought Monitor — USDA, NOAA, and University of Nebraska–Lincoln",
+      "archive": {
+        "wayback_url": null,
+        "noaa_s3": null,
+        "mirror": null
+      },
+      "status": "live",
+      "last_checked": "2026-06-29",
+      "checksum": null,
+      "notes": null
+    },
+    {
+      "id": "usgs-nwis-water-data",
+      "title": "USGS National Water Information System (NWIS)",
+      "description": "Real-time and historical streamflow, groundwater, water quality, and related measurements from USGS monitoring networks. The primary federal portal for US hydrologic observations used in drought, flood, and climate-impact studies.\n",
+      "publisher": "U.S. Geological Survey (USGS)",
+      "topics": [
+        "hydrology",
+        "streamflow",
+        "groundwater",
+        "water-quality",
+        "united-states"
+      ],
+      "source": {
+        "canonical_url": "https://waterdata.usgs.gov/nwis",
+        "former_climate_gov_url": null,
+        "doi": null
+      },
+      "access": {
+        "method": [
+          "web",
+          "api",
+          "bulk"
+        ],
+        "auth_required": false,
+        "auth_note": null,
+        "rate_limit": "Documented NWIS web service limits; be polite"
+      },
+      "format": [
+        "rdb",
+        "json",
+        "xml"
+      ],
+      "coverage": {
+        "spatial": "United States and territories",
+        "temporal": "site-dependent; many decades",
+        "cadence": "irregular"
+      },
+      "license": "public-domain (US Gov work)",
+      "attribution": "U.S. Geological Survey National Water Information System",
+      "archive": {
+        "wayback_url": null,
+        "noaa_s3": null,
+        "mirror": null
+      },
+      "status": "live",
+      "last_checked": "2026-06-29",
+      "checksum": null,
+      "notes": null
     }
   ]
 }
